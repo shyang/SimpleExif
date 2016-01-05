@@ -12,9 +12,9 @@
 
 @implementation UIImage (Exif)
 
-- (NSData *)addExif:(ExifContainer *)container {
+- (NSData *)addExif:(ExifContainer *)container quality:(CGFloat)quality {
     
-    NSData *imageData = UIImageJPEGRepresentation(self, 1.0f);
+    NSData *imageData = UIImageJPEGRepresentation(self, quality);
     
     // create an imagesourceref
     CGImageSourceRef source = CGImageSourceCreateWithData((__bridge CFDataRef) imageData, NULL);
