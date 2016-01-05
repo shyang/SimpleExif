@@ -21,13 +21,13 @@
 
 @implementation ExifContainer
 
-- (instancetype)init {
+- (instancetype)initWithProperties:(NSDictionary *)properties {
     
     self = [super init];
     
     if (self) {
         
-        _imageMetadata = [[NSMutableDictionary alloc] init];
+        _imageMetadata = [[NSMutableDictionary alloc] initWithDictionary:properties];
         
     }
     

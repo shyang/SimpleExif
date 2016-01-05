@@ -17,5 +17,6 @@
 - (void)addCreationDate:(NSDate *)date;
 - (void)addDescription:(NSString*)description;
 
-- (NSDictionary *)exifData;
+- (instancetype)initWithProperties:(NSDictionary *)properties;
+- (NSMutableDictionary *)exifData;
 @end

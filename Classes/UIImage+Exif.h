@@ -12,6 +12,6 @@
 
 @interface UIImage (Exif)
 
-- (NSData *)addExif:(ExifContainer *)container;
+- (NSData *)addExif:(ExifContainer *)container quality:(CGFloat)quality;
 
 @end
